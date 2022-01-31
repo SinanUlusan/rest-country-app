@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.activeModal {
+  background: grey;
+}
+
+.colClass {
+  position: relative;
+  z-index: 99;
+}
+
+.cardClass {
+  margin: 3rem;
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 300px;
+  height: 350px;
+  position: relative;
+  background: #fff;
+}
+
+.cardClass:hover {
+  transform: scale(1.1);
+}
+
+.cardClass .imgClass {
+  width: 300px;
+  position: relative;
+}
+
+.cardClass .cardBodyClass {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
+}
+
+.cardClass .cardBodyClass .cardTitleClass {
+  color: #4c4a37;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.cardClass .cardBodyClass b {
+  color: #7c795d;
+}
+
+.cardClass .cardBodyClass .cardTextClass {
+  color: #be4c23;
+  margin: 6px 0;
+}
+
+.modal {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  height: 70vh;
+  width: 60vw !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background: red;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
